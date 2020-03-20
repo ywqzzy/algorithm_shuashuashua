@@ -1,3 +1,5 @@
+package 买卖股票系列;
+
 public class 最佳买卖股票时机含冷冻期 {
     public int maxProfit(int[] prices) {
         if(prices.length < 2) return 0;

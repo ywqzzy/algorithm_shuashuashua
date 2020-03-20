@@ -1,3 +1,5 @@
+package 买卖股票系列;
+
 public class 买卖股票的最佳时期ii {
     public int maxProfit(int[] prices) {
         int res = 0;
