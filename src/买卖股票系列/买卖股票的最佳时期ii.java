@@ -12,6 +12,5 @@ public class 买卖股票的最佳时期ii {
 
     public static void main(String[] args) {
         买卖股票的最佳时期ii main = new 买卖股票的最佳时期ii();
-
     }
 }
