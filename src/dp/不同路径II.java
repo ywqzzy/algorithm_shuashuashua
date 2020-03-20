@@ -1,3 +1,5 @@
+package dp;
+
 public class 不同路径II {
 
     public int uniquePathsWithObstacles(int[][] obstacleGrid) {

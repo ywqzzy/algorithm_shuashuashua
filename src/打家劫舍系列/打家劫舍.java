@@ -1,3 +1,5 @@
+package 打家劫舍系列;
+
 public class 打家劫舍 {
     public int rob(int[] nums) {
         if(nums == null) return 0;

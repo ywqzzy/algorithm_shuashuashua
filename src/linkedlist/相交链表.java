@@ -1,3 +1,5 @@
+package linkedlist;
+
 public class 相交链表 {
 
 

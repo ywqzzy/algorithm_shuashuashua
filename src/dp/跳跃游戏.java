@@ -1,3 +1,5 @@
+package dp;
+
 public class 跳跃游戏 {
     public boolean canJump1(int[] nums) {
         if(nums == null) return false;

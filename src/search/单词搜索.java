@@ -1,3 +1,5 @@
+package search;
+
 public class 单词搜索 {
     int []dx = {-1, 0, 1, 0};
     int []dy = {0, 1, 0, -1};

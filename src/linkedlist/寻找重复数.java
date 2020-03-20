@@ -1,3 +1,5 @@
+package linkedlist;
+
 public class 寻找重复数 {
 
     // 循环检测 可以把题目转换成环形链表入口那题。。。。 太难了！！！

@@ -1,3 +1,5 @@
+package search;
+
 import java.util.*;
 
 public class 折纸问题 {

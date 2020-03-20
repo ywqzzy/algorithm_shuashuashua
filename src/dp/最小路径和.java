@@ -1,3 +1,5 @@
+package dp;
+
 public class 最小路径和 {
     public int minPathSum(int[][] grid) {
         int[][] dp = new int[grid.length][grid[0].length];

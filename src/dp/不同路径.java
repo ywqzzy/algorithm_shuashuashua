@@ -1,3 +1,5 @@
+package dp;
+
 public class 不同路径 {
     public int uniquePaths(int m, int n) {
         int[][] dp = new int[m+1][n+1];
