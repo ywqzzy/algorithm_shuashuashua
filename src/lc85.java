@@ -19,27 +19,27 @@ class lc85 {
         return resultMax;
     }
 
-    public static int helper(int[]height){
+    public static int helper(int[]height) {
         int n = height.length;
         //arrayList 可以指定大小
         List<Integer> left = new ArrayList<Integer>(n);
         List<Integer> right = new ArrayList<Integer>(n);
         Stack<Integer> stack = new Stack<>();
-        for(int i = 0;i < n;i++){
+        for(int i = 0;i < n;i++) {
             while(stack.size() > 0 && height[stack.peek()] >= height[i]) stack.pop();
             if(stack.empty()) left.add(i, -1);
             else left.add(i,stack.peek());
             stack.push(i);
         }
         while(stack.size() > 0) stack.pop();
-        for(int i = n - 1;i >= 0;i--){
+        for(int i = n - 1;i >= 0;i--) {
             while(stack.size() > 0 && height[stack.peek()] >= height[i]) stack.pop();
             if(stack.empty()) right.add(i,n);
             else right.add(i,stack.peek());
             stack.push(i);
         }
         int res = 0;
-        for(int i = 0;i < n;i++){
+        for(int i = 0;i < n;i++) {
             res = Math.max(res,height[i] * (right.get(i) - left.get(i) - 1));
         }
         return res;

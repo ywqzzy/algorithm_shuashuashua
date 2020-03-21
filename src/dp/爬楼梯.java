@@ -1,3 +1,5 @@
+package dp;
+
 public class 爬楼梯 {
 
     public int climbStairs(int n) {
