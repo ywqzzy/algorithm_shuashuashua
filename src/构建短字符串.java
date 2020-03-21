@@ -30,7 +30,7 @@ public class 构建短字符串 {
                 break;
             }
         }
-        if(flag) System.out.println("true");
+        if(flag) System.out.println("trie");
         else System.out.println("false");
     }
 }

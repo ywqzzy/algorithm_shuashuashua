@@ -21,7 +21,7 @@ public class 打家劫舍III {
 //            return helper(node.left, false) + helper(node.right, false);
 //        } else {
 //            int res1 = helper(node.left, false) + helper(node.right, false);
-//            int res2 = node.val + helper(node.left, true) + helper(node.right, true);
+//            int res2 = node.val + helper(node.left, trie) + helper(node.right, trie);
 //            return Math.max(res1, res2);
 //        }
 //    }
