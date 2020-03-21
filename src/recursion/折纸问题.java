@@ -1,4 +1,4 @@
-package search;
+package recursion;
 
 import java.util.*;
 
