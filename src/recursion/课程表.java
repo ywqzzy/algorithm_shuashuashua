@@ -31,7 +31,27 @@ public class 课程表 {
 
     // 2. dfs 判断图中是否有环
     public boolean canFinish(int numCourses, int[][] prerequisites) {
-        return false;
+        List<List<Integer>> adjacency = new ArrayList<>();
+        for(int i = 0; i < numCourses; i++) adjacency.add(new ArrayList<>());
+        for(int[] p: prerequisites) {
+            adjacency.get(p[1]).add(p[0]);
+        }
+        int[] visited = new int[numCourses];
+        for(int i = 0; i < numCourses; i++) {
+            if(!dfs(adjacency, visited, i)) return false;
+        }
+        return true;
+    }
+
+    public boolean dfs(List<List<Integer>> adjacency, int[] visited, int i) {
+        if(visited[i] == 1) return  false;
+        if(visited[i] == -1) return true;
+        visited[i] = 1;
+        for(int j = 0; j < adjacency.get(i).size(); j++) {
+            if(!dfs(adjacency, visited, adjacency.get(i).get(j))) return false;
+        }
+        visited[i] = -1;
+        return true;
     }
 
 

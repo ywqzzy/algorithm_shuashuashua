@@ -2,7 +2,6 @@ package trie;
 
 public class 实现前缀树 {
     class Trie {
-
         class TrieNode {
             private TrieNode[] links;
 
