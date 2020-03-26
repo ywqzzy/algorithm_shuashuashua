@@ -9,6 +9,7 @@ public class 对称二叉树 {
             val = x;
         }
     }
+
     public boolean isSymmetric(TreeNode root) {
         if(root == null) return true;
         return helper(root, root);

@@ -8,7 +8,7 @@ public class 跳跃游戏 {
         for(int i = 1; i < nums.length; i++) {
             for(int j = 0; j < i; j++) {
                 if(dp[j] && nums[j] + j >= i) {
-                    dp[i] = trie;
+                    dp[i] = true;
                     break;
                 }
             }
