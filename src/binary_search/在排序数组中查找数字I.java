@@ -1,12 +1,13 @@
 package binary_search;
 
-public class 在排序数组中查找元素的第一个和最后一个位置 {
-    public int[] searchRange(int[] nums, int target) {
-        if(nums == null || nums.length == 0) return new int[]{-1,-1};
-        if(nums.length == 1) return nums[0] == target ? new int[]{0,0}: new int[]{-1,-1};
+public class 在排序数组中查找数字I {
+    public int search(int[] nums, int target) {
+        if(nums == null || nums.length == 0) return 0;
+        if(nums.length == 1) return nums[0] == target ? 1: 0;
         int start = left_bound(nums, target);
+        if(start == -1) return 0;
         int end = right_bound(nums, target);
-        return new int[]{start, end};
+        return end - start + 1;
     }
 
     int left_bound(int[] nums, int target) {
