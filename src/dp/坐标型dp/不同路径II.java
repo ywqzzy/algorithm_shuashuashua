@@ -1,4 +1,4 @@
-package dp;
+package dp.坐标型dp;
 
 public class 不同路径II {
 
