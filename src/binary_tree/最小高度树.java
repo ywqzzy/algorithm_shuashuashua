@@ -1,0 +1,23 @@
+package binary_tree;
+
+import java.util.Arrays;
+
+public class 最小高度树 {
+    public class TreeNode {
+        int val;
+        TreeNode left;
+        TreeNode right;
+        TreeNode(int x) {
+            val = x;
+        }
+    }
+
+    public TreeNode sortedArrayToBST(int[] nums) {
+        if(nums.length == 0) return null;
+        TreeNode root = new TreeNode(nums[nums.length / 2]);
+        root.left = sortedArrayToBST(Arrays.copyOf(nums, nums.length / 2));
+        root.right = sortedArrayToBST(Arrays.copyOfRange(nums, nums.length/2 + 1, nums.length));
+        return root;
+    }
+
+}
