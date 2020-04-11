@@ -3,6 +3,8 @@ package stack;
 import java.util.Stack;
 
 public class 最小栈 {
+
+    // 前缀和的思想
     class MinStack {
         Stack<Integer> stack;
         Stack<Integer> minStack;
